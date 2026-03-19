@@ -1,0 +1,16 @@
+{
+  "name": "keval-todo-playwright-tests",
+  "version": "1.0.0",
+  "description": "Playwright automation tests for Keval Todo App - Add Task & Edit Task modules",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:add": "npx playwright test tests/addTask.spec.js",
+    "test:edit": "npx playwright test tests/editTask.spec.js",
+    "test:report": "npx playwright show-report reports/html",
+    "test:debug": "npx playwright test --debug"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.42.0"
+  }
+}
